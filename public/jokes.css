@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: rgb(73, 149, 94);
+  padding: 40px;
+}
+
+header > h1 {
+  font-size: 30p;
+  color: aliceblue;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+nav {
+  background-color: rgb(57, 30, 122);
+  border-top: 5px solid rgb(89, 89, 89);
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 20px 10px;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main {
+  min-height: 200px;
+  padding: 20px;
+}
+
+footer {
+  padding: 15px;
+  background-color: rgb(250, 207, 177);
+  font-weight: bold;
+}
+/* 
+blockquote {
+  display: table;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em;
+}
+blockquote p {
+  display: table-cell;
+  width: 90%;
+  vertical-align: top;
+  margin-right: 10px;
+}
+blockquote form {
+  display: table-cell;
+  width: 10%;
+} */
+
+#jokes_page div.jokes-list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.jokes-list blockquote {
+  width: 90%;
+}
+
+.jokes-list form {
+  width: 10%;
+  padding: 10px;
+}
+
+.jokes-list input[type="submit"] {
+  padding: 5px;
+}
+
+.errors {
+  padding: 1em;
+  border: 1px solid red;
+  background-color: lightyellow;
+  color: red;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+.errors ul {
+  margin-left: 1em;
+}
+
+.currentpage:before {
+  content: "[";
+}
+.currentpage:after {
+  content: "]";
+}
+
+.currentpage {
+  text-decoration: none;
+  cursor: inherit;
+}
